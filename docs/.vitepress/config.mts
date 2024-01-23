@@ -9,7 +9,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     editLink: {
-      pattern: "https://github.com/wling-art/U1_wiki/docs/:path",
+      pattern: "https://github.com/wling-art/U1_wiki/tree/main/docs/:path",
     },
     nav: [
       { text: "主界面   ", link: "/" },
