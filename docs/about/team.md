@@ -17,8 +17,7 @@ const coreMembers = [
     name: 'wlingzhenyu',
     title: '主作者',
     links:
-      { icon: 'github', link: 'https://github.com/wling-art' }
-    ],
+      { icon: 'github', link: 'https://github.com/wling-art' },
     sponsor: 'https://afdian.net/a/ZLServer',
     actionText: '捐赠作者'
   },
