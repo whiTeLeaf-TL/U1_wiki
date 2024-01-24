@@ -50,7 +50,7 @@ export default defineConfig({
               { text: "疯狂星期四", link: "/yaoyi-func/疯狂星期四" },
               { text: "回声洞", link: "/yaoyi-func/回声洞" },
               { text: "今日运势", link: "/yaoyi-func/今日运势" },
-              { text: "今天吃什么？", link: "/yaoyi-func/今天吃什么？" },
+              { text: "今天吃什么？", link: "/yaoyi-func/今天吃什么" },
               { text: "历史上的今天", link: "/yaoyi-func/历史上的今天" },
               { text: "涩图", link: "/yaoyi-func/涩图" },
               { text: "天气", link: "/yaoyi-func/天气" },
