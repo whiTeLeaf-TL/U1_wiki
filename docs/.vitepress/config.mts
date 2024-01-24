@@ -73,7 +73,7 @@ export default defineConfig({
     ],
     footer: {
       message: `基于 GPL-3.0 license 许可发布 | 文档版本 ${pkg.version}`,
-      copyright: `版权所有 © 2023-${new Date().getFullYear()} 钟乐服务器`,
+      copyright: `版权所有 © 2023-${new Date().getFullYear()} U1`,
     },
     docFooter: {
       prev: "上一页",

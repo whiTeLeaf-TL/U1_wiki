@@ -15,17 +15,22 @@ const coreMembers = [
   {
     avatar: 'https://github.com/wling-art.png',
     name: 'wlingzhenyu',
-    title: '服主',
-    links: [
+    title: '主作者',
+    links:
       { icon: 'github', link: 'https://github.com/wling-art' }
     ],
     sponsor: 'https://afdian.net/a/ZLServer',
-    actionText: '捐赠服主'
+    actionText: '捐赠作者'
   },
   {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3603866430&spec=100',
     name: '海棠',
-    title: '管理员'
+    title: '群管'
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=869379440&spec=100',
+    name: '风林',
+    title: '账号的提供'
   }
 ]
 
@@ -74,7 +79,7 @@ const partners = [
       认识团队
     </template>
     <template #lead>
-      在这个页面你将了解服务器的核心人员组成
+      在这个页面你将了解为项目做出贡献的人
     </template>
   </VPTeamPageTitle>
   <VPTeamPageSection>
