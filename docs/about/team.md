@@ -1,0 +1,94 @@
+---
+layout: page
+title: 认识团队
+---
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers,
+  VPTeamPageSection
+} from 'vitepress/theme'
+
+
+const coreMembers = [
+  {
+    avatar: 'https://github.com/wling-art.png',
+    name: 'wlingzhenyu',
+    title: '服主',
+    links: [
+      { icon: 'github', link: 'https://github.com/wling-art' }
+    ],
+    sponsor: 'https://afdian.net/a/ZLServer',
+    actionText: '捐赠服主'
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3603866430&spec=100',
+    name: '海棠',
+    title: '管理员'
+  }
+]
+
+const partners = [
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1519412035&spec=100',
+    name: 'Gemence',
+    title: '捐赠 1 次, 共 5 元',
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=869379440&spec=100',
+    name: '风林',
+    title: '捐赠 37 次, 共 195 元',
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3603866430&spec=100',
+    name: '海棠',
+    title: '捐赠 1 次, 共 5 元',
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=292702551&spec=100',
+    name: '空气',
+    title: '捐赠 4 次, 共 175 元',
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3530300540&spec=100',
+    name: '9',
+    title: '捐赠 3 次, 共 75 元',
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2668127763&spec=100',
+    name: '隔壁老衫',
+    title: '捐赠 1 次, 共 10 元',
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=0&spec=100',
+    name: '热血市民小彭',
+    title: '捐赠 1 次, 共 10 元'
+  }
+]
+</script>
+
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+      认识团队
+    </template>
+    <template #lead>
+      在这个页面你将了解服务器的核心人员组成
+    </template>
+  </VPTeamPageTitle>
+  <VPTeamPageSection>
+    <template #title>管理团队</template>
+    <template #lead>这是目前是U1的管理团队, 感谢他们让U1更美好!</template>
+    <template #members>
+      <VPTeamMembers size="medium" :members="coreMembers" />
+    </template>
+  </VPTeamPageSection>
+  <VPTeamPageSection>
+    <template #title>赞助者</template>
+    <template #lead>这些是捐赠过U1的人, 感谢他们让作者渡过难关!(排名不分先后)</template>
+    <template #members>
+      <VPTeamMembers size="small" :members="partners" />
+    </template>
+  </VPTeamPageSection>
+</VPTeamPage>

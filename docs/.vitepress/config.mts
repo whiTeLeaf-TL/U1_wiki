@@ -2,18 +2,32 @@ import { defineConfig } from "vitepress";
 import pkg from "../../package.json";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lastUpdated: true,
   lang: "zh-CN",
   title: "U1 Wiki",
   description: "U1 文档",
   ignoreDeadLinks: true,
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  sitemap: {
+    hostname: "https://u1.tblstudio.cn",
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: { src: "/logo.svg", width: 28, height: 28 },
     editLink: {
       pattern: "https://github.com/wling-art/U1_wiki/tree/main/docs/:path",
     },
     nav: [
       { text: "主界面   ", link: "/" },
       { text: "百科", link: "/intro" },
+      {
+        text: "关于",
+        items: [
+          { text: "关于我们", link: "/about/intro" },
+          { text: "认识成员", link: "/about/team" },
+          { text: "联系我们", link: "/about/contact" },
+        ],
+      },
     ],
 
     sidebar: [
@@ -41,6 +55,7 @@ export default defineConfig({
               { text: "网易云点歌", link: "/yaoyi-func/网易云点歌" },
               { text: "伪造信息", link: "/yaoyi-func/伪造信息" },
               { text: "字符画", link: "/yaoyi-func/字符画" },
+              { text: "表情包制作", link: "/yaoyi-func/表情包制作" },
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
               { text: "识别动漫", link: "/yaoyi-func/识别动漫" },
               { text: "状态信息", link: "/yaoyi-func/状态信息" },

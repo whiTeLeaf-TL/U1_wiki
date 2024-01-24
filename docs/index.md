@@ -7,6 +7,7 @@ hero:
   image:
     src: /logo.svg
     alt: Logo
+    width: 245px
   actions:
     - theme: brand
       text: 开始教程罢~🤔
