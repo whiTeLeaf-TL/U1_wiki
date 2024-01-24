@@ -16,8 +16,8 @@ const coreMembers = [
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1990248284&spec=100',
     name: 'wlingzhenyu',
     title: '主作者',
-    links:
-      { icon: 'github', link: 'https://github.com/wling-art' },
+    links:[
+      { icon: 'github', link: 'https://github.com/wling-art' }],
     sponsor: 'https://afdian.net/a/ZLServer',
     actionText: '捐赠作者'
   },
@@ -25,11 +25,6 @@ const coreMembers = [
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3603866430&spec=100',
     name: '海棠',
     title: '群管'
-  },
-  {
-    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=869379440&spec=100',
-    name: '风林',
-    title: '账号的提供'
   }
 ]
 
