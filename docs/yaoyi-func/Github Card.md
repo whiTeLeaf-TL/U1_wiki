@@ -1,0 +1,10 @@
+# Github Card
+我是码农，我骄傲！
+
+## 服务信息
+- **服务名**：Github Card
+- **说明**：展示GitHub仓库卡片
+- **权限限定**：群聊/私聊
+
+## 命令列表
+- **Github Card**：发送关于github的仓库卡片，匹配规则：`https?://github\.com/([^/]+/[^/]+)`
