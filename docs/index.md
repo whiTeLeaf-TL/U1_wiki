@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: 'U1 Wiki'
-  tagline: 感谢每一位玩家的到来💡
+  tagline: 感谢各位的到来💡
   image:
     src: /logo.svg
     alt: Logo
