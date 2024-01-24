@@ -13,7 +13,7 @@ import {
 
 const coreMembers = [
   {
-    avatar: 'https://github.com/wling-art.png',
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1990248284&spec=100',
     name: 'wlingzhenyu',
     title: '主作者',
     links:
