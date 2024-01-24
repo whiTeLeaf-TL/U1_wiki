@@ -11,7 +11,9 @@ export default defineConfig({
   sitemap: {
     hostname: "https://u1.tblstudio.cn",
   },
-  themeConfig: {
+  themeConfig: { search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: "/logo.svg", width: 28, height: 28 },
     editLink: {
