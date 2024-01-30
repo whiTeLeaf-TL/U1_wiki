@@ -67,7 +67,7 @@ const partners = [
   {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2544028137&spec=100',
     name: '杨骐鸣',
-    title: '捐赠 1 次, 共 5 元'
+    title: '捐赠 3 次, 共 15 元'
   }
 ]
 </script>
