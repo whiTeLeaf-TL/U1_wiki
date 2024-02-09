@@ -70,14 +70,14 @@ const partners = [
     title: '捐赠 3 次, 共 15 元'
   },
   {
-    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1278560068&spec=100',
-    name: 'kou1024',
-    title: '捐赠 1 次, 共 50 元'
-  },
-  {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=242800056&spec=100',
     name: '被闰土追杀的猹',
     title: '捐赠 1 次, 共 1 元'
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1278560068&spec=100',
+    name: 'kou1024',
+    title: '捐赠 1 次, 共 50 元'
   }
 ]
 </script>
