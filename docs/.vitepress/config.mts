@@ -7,7 +7,17 @@ export default defineConfig({
   title: "U1 Wiki",
   description: "U1 文档",
   ignoreDeadLinks: true,
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [    ['link',
+      { rel: 'icon', href: '/favicon.ico' }
+    ],
+    [
+      'script',
+      { async: '', src: '/m.js' }
+    ],
+    [
+      'script',
+      { async: 'true', src: '/cursor.js' }
+    ]],
   sitemap: {
     hostname: "https://u1.tblstudio.cn",
   },
