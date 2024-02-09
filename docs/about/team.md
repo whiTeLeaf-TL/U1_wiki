@@ -37,7 +37,7 @@ const partners = [
   {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=869379440&spec=100',
     name: '风林',
-    title: '捐赠 37 次, 共 195 元',
+    title: '捐赠 2 次, 共 195 元',
   },
   {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3603866430&spec=100',
