@@ -12,7 +12,7 @@ export default defineConfig({
     ],
     [
       'script',
-      { async: '', src: '/m.js' }
+      { async: '', src: 'https://docs.clock-fun.top/m.js' }
     ],
     [
       'script',
