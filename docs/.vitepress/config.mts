@@ -79,7 +79,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/CrashVibe/docs" },
+      { icon: "github", link: "https://github.com/CrashVibe/U1_wiki" },
     ],
     footer: {
       message: `基于 GPL-3.0 license 许可发布 | 文档版本 ${pkg.version}`,
