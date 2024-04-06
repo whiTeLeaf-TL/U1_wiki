@@ -7,7 +7,9 @@ export default defineConfig({
   title: "U1 Wiki",
   description: "U1 文档",
   ignoreDeadLinks: true,
-  head: [    ['link',
+  head: [
+    [
+      'link',
       { rel: 'icon', href: '/favicon.ico' }
     ],
     [
@@ -72,6 +74,7 @@ export default defineConfig({
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
               { text: "识别动漫", link: "/yaoyi-func/识别动漫" },
               { text: "状态信息", link: "/yaoyi-func/状态信息" },
+              { text: "钓鱼", link: "/yaoyi-func/钓鱼" },
             ],
           },
         ],
