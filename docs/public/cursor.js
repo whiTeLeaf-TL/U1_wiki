@@ -44,15 +44,22 @@ class Cursor {
         }
 
         var el = document.getElementsByTagName("*");
-        for (let i = 0; i < el.length; i++)
-        if (getStyle(el[i], "cursor") == "pointer") this.pt.push(el[i].outerHTML);
+        for (let i = 0; i < el.length; i++) {
+            if (getStyle(el[i], "cursor") == "pointer") this.pt.push(el[i].outerHTML);
+        }
 
-        document.body.appendChild((this.scr = document.createElement("style")));
-        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='10px' height='10px'><circle cx='4' cy='4' r='4' fill='white' /></svg>") 4 4, auto !important}`;
+        // Create style element only once
+        if (!this.scr) {
+            this.scr = document.createElement("style");
+            document.body.appendChild(this.scr);
+        }
+
+        // Cache initial cursor fill color
+        this.cursorFill = 'black';
     }
 
     refresh() {
-        this.scr.remove();
+        // No need to recreate style element, just update classes
         this.cursor.classList.remove("active");
         this.pos = {
             curr: null,
@@ -66,6 +73,8 @@ class Cursor {
     }
 
     init() {
+        // Register event handlers only once
+        this.cursorFill = null
         document.onmousemove = (e) => {
             this.pos.curr == null && this.move(e.clientX - 8, e.clientY - 8);
             this.pos.curr = {
@@ -91,21 +100,32 @@ class Cursor {
         this.checkthemmode();
         requestAnimationFrame(() => this.render());
     }
+
     checkthemmode() {
-        const preference = localStorage.getItem('vitepress-theme-appearance') || 'auto'
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (!preference || preference === 'auto' ? prefersDark : preference === 'dark'){
+        const preference = localStorage.getItem('vitepress-theme-appearance') || 'auto';
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDarkMode = !preference || preference === 'auto' ? prefersDark : preference === 'dark';
+        const cursorFill = isDarkMode ? 'white' : 'black';
 
-            this.cursor.classList.add('dark')
-            this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='10px' height='10px'><circle cx='4' cy='4' r='4' fill='white' /></svg>") 4 4, auto !important}`;
+        // Only update cursor fill color if it has changed
+        if (this.cursorFill !== cursorFill) {
+            this.cursorFill = cursorFill;
+            this.cursor.classList.toggle('dark', isDarkMode);
+            this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='10px' height='10px'><circle cx='4' cy='4' r='4' fill='${cursorFill}' /></svg>") 4 4, auto !important}`;
         }
-        else {
-            this.cursor.classList.remove('dark')
-            this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='10px' height='10px'><circle cx='4' cy='4' r='4' fill='black' /></svg>") 4 4, auto !important}`;
-
-        }
-
     }
 }
 
-cursorInit();
+/* 手机版不再显示自定义指针图标 */
+function checkDesktop() {
+    const isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
+    const isTablet = /iPad/i.test(navigator.userAgent)
+    const isDesktop = !isMobile && !isTablet;
+    return isDesktop;
+}
+
+let isDesktop = checkDesktop()
+
+if (isDesktop) {
+    cursorInit() // 初始化
+}
