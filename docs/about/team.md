@@ -13,18 +13,34 @@ import {
 
 const coreMembers = [
   {
-    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1990248284&spec=100',
+    avatar: 'https://github.com/wling-art.png',
     name: 'wlingzhenyu',
-    title: '主作者',
-    links:[
-      { icon: 'github', link: 'https://github.com/wling-art' }],
+    title: '服主',
+    links: [
+      { icon: 'github', link: 'https://github.com/wling-art' }
+    ],
     sponsor: 'https://afdian.net/a/ZLServer',
-    actionText: '捐赠作者'
+    actionText: '捐赠服主'
   },
   {
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3603866430&spec=100',
-    name: '海棠',
-    title: '群管'
+    name: 'HaiTang_Game',
+    title: '管理员',
+    links: [
+      { icon: 'github', link: 'https://github.com/haitang000' }
+    ],
+    sponsor: 'https://afdian.net/a/haitang_HTUI',
+    actionText: '捐赠'
+  },
+  {
+    avatar: 'https://github.com/liuzhen9320.png',
+    name: 'liuzhen932',
+    title: '回声洞审核 / 思路提供',
+    links: [
+      { icon: 'github', link: 'https://github.com/liuzhen9320' }
+    ],
+    sponsor: 'https://afdian.net/a/hackpig520',
+    actionText: '捐赠'
   }
 ]
 
