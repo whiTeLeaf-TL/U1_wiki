@@ -82,7 +82,7 @@ const sponsors = [
     <template #title>赞助者</template>
     <template #lead>这些是捐赠过 U1 的人, 感谢他们让作者渡过难关!(排名不分先后)</template>
     <template #members>
-      <VPTeamMembers size="medium" :members="sponsors" />
+      <VPTeamMembers size="small" :members="sponsors" />
     </template>
   </VPTeamPageSection>
 </VPTeamPage>
