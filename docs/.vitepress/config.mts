@@ -38,9 +38,10 @@ export default defineConfig({
       {
         text: "关于",
         items: [
-          { text: "关于我们", link: "/about/intro" },
-          { text: "认识成员", link: "/about/team" },
-          { text: "联系我们", link: "/about/contact" },
+          { text: "📃 关于我们", link: "/about/intro" },
+          { text: "🤗 认识成员", link: "/about/team" },
+          { text: "❤️ 赞助列表", link: "/about/sponsors" },
+          { text: "☎️ 联系我们", link: "/about/contact" },
         ],
       },
     ],
