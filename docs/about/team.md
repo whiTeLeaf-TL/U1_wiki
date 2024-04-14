@@ -78,6 +78,11 @@ const partners = [
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1278560068&spec=100',
     name: 'kou1024',
     title: '捐赠 1 次, 共 50 元'
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=1559932018&spec=100',
+    name: 'city1',
+    title: '捐赠 1 次, 共 10 元'
   }
 ]
 </script>
