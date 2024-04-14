@@ -26,4 +26,8 @@ features:
   - title: '我该做什么?'
     icon: ✨
     details: 感谢您选择姚奕, 我们希望这个 Wiki 能够为您的使用之旅增添乐趣和便利!
+  - title: 支持作者
+    icon: ❤
+    link: /about/sponsors
+    details: 喜欢姚奕? 快来支持一下作者罢~
 ---
