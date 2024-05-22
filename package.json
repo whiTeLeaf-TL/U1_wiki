@@ -1,5 +1,5 @@
 {
-    "name": "zldocs",
+    "name": "u1wiki",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -11,6 +11,6 @@
     },
     "license": "GPL-3.0",
     "devDependencies": {
-        "vitepress": "1.0.0-rc.40"
+        "vitepress": "1.2.2"
     }
 }
