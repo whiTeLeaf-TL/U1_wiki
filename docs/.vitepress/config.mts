@@ -5,7 +5,7 @@ export default defineConfig({
   lastUpdated: true,
   lang: "zh-CN",
   title: "U1 Wiki",
-  description: "U1 文档",
+  description: "U1 项目的官方文档",
   ignoreDeadLinks: true,
   head: [
     [
@@ -57,12 +57,13 @@ export default defineConfig({
             text: "✨ 姚奕功能介绍",
             items: [
               { text: "娶群友", link: "/yaoyi-func/娶群友" },
+              { text: "钓鱼 🔥", link: "/yaoyi-func/钓鱼" },
+              { text: "今日运势 🔥", link: "/yaoyi-func/今日运势" },
               { text: "成分姬", link: "/yaoyi-func/成分姬" },
               { text: "词云图", link: "/yaoyi-func/词云图" },
               { text: "答案之书", link: "/yaoyi-func/答案之书" },
               { text: "疯狂星期四", link: "/yaoyi-func/疯狂星期四" },
               { text: "回声洞", link: "/yaoyi-func/回声洞" },
-              { text: "今日运势", link: "/yaoyi-func/今日运势" },
               { text: "今天吃什么", link: "/yaoyi-func/今天吃什么" },
               { text: "历史上的今天", link: "/yaoyi-func/历史上的今天" },
               { text: "涩图", link: "/yaoyi-func/涩图" },
@@ -75,7 +76,6 @@ export default defineConfig({
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
               { text: "识别动漫", link: "/yaoyi-func/识别动漫" },
               { text: "状态信息", link: "/yaoyi-func/状态信息" },
-              { text: "钓鱼", link: "/yaoyi-func/钓鱼" },
             ],
           },
         ],
