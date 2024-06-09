@@ -78,10 +78,15 @@ export default defineConfig({
               { text: "状态信息", link: "/yaoyi-func/状态信息" },
             ],
           },
+          {
+            text: "其他",
+            items: [
+              { text: "❤ 支持我们", link: "/others/support" },
+            ],
+          },
         ],
       },
     ],
-
     socialLinks: [
       { icon: "github", link: "https://github.com/CrashVibe/U1_wiki" },
     ],
