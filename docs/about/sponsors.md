@@ -81,7 +81,7 @@ const sponsors = [
     </template>
     <template #lead>
       在这个页面你将了解为项目做出财力支持的人
-      <a href="../others/support.md">如何贡献</a>
+      <a href="../others/support">如何贡献</a>
     </template>
   </VPTeamPageTitle>
   <VPTeamPageSection>
