@@ -71,6 +71,7 @@ export default defineConfig({
               { text: "网抑云", link: "/yaoyi-func/网抑云" },
               { text: "伪造信息", link: "/yaoyi-func/伪造信息" },
               { text: "字符画", link: "/yaoyi-func/字符画" },
+              { text: "表情包制作", link: "/yaoyi-func/表情包制作" },
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
               { text: "状态信息", link: "/yaoyi-func/状态信息" },
             ],
