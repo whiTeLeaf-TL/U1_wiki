@@ -20,8 +20,6 @@
 
 您可以通过 [Github issues](https://github.com/wling-art/U1Bot/issues) 或 [官方 QQ 群](/about/contact) 反馈问题；在 Issues 或 QQ 群 中，请 **详细地** 描述您遇到的问题，并尽可能描述如何复现该问题，以便我们更好地对问题进行定位和修复
 
----
-
 ::: warning 请注意！
 Github 在部分地区可能无法正常访问，请根据自身情况合理选择反馈途径
 :::
