@@ -1,25 +1,37 @@
 import { defineConfig } from "vitepress";
+import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
 import pkg from "../../package.json";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    optimizeDeps: {
+      exclude: [
+        "@nolebase/vitepress-plugin-enhanced-readabilities/client",
+        "@nolebase/ui",
+        "@nolebase/vitepress-plugin-inline-link-preview",
+        "@nolebase/vitepress-plugin-highlight-targeted-heading",
+      ],
+    },
+    ssr: {
+      noExternal: [
+        // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
+        "@nolebase/vitepress-plugin-enhanced-readabilities",
+        "@nolebase/ui",
+        "@nolebase/vitepress-plugin-highlight-targeted-heading",
+        "@nolebase/vitepress-plugin-inline-link-preview",
+      ],
+    },
+  },
   lastUpdated: true,
   lang: "zh-CN",
   title: "U1 Wiki",
   description: "U1 项目的官方文档",
   ignoreDeadLinks: true,
   head: [
-    [
-      'link',
-      { rel: 'icon', href: '/favicon.ico' }
-    ],
-    [
-      'script',
-      { async: '', src: '/m.js' }
-    ],
-    [
-      'script',
-      { async: 'true', src: '/cursor.js' }
-    ]],
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["script", { async: "", src: "/m.js" }],
+    ["script", { async: "true", src: "/cursor.js" }],
+  ],
   sitemap: {
     hostname: "https://u1.tblstudio.cn",
   },
@@ -65,7 +77,6 @@ export default defineConfig({
               { text: "回声洞", link: "/yaoyi-func/回声洞" },
               { text: "今天吃什么", link: "/yaoyi-func/今天吃什么" },
               { text: "历史上的今天", link: "/yaoyi-func/历史上的今天" },
-              { text: "涩图", link: "/yaoyi-func/涩图" },
               { text: "天气", link: "/yaoyi-func/天气" },
               { text: "网抑云", link: "/yaoyi-func/网抑云" },
               { text: "网易云点歌", link: "/yaoyi-func/网易云点歌" },
@@ -78,9 +89,7 @@ export default defineConfig({
           },
           {
             text: "其他",
-            items: [
-              { text: "❤ 支持我们", link: "/others/support" },
-            ],
+            items: [{ text: "❤ 支持我们", link: "/others/support" }],
           },
         ],
       },
@@ -102,5 +111,22 @@ export default defineConfig({
     darkModeSwitchLabel: "主题",
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
+  },
+  markdown: {
+    config(md) {
+      // 其他 markdown-it 配置...
+      md.use(InlineLinkPreviewElementTransform);
+    },
+    image: {
+      // 图片懒加载
+      lazyLoading: true,
+    },
+    container: {
+      tipLabel: "提示",
+      warningLabel: "警告",
+      dangerLabel: "危险",
+      infoLabel: "信息",
+      detailsLabel: "详细信息",
+    },
   },
 });
