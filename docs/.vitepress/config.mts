@@ -1,15 +1,22 @@
 import { defineConfig } from "vitepress";
 import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it";
 import pkg from "../../package.json";
+import { ThumbnailHashImages } from "@nolebase/vitepress-plugin-thumbnail-hash/vite";
+import { PageProperties } from "@nolebase/vitepress-plugin-page-properties/vite";
+import { UnlazyImages } from "@nolebase/markdown-it-unlazy-img";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
+    plugins: [ThumbnailHashImages(), PageProperties()],
     optimizeDeps: {
       exclude: [
-        "@nolebase/vitepress-plugin-enhanced-readabilities/client",
+        "@nolebase/vitepress-plugin-enhanced-readabilities",
+        "vitepress",
         "@nolebase/ui",
         "@nolebase/vitepress-plugin-inline-link-preview",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
+        "@nolebase/vitepress-plugin-thumbnail-hash",
       ],
     },
     ssr: {
@@ -19,6 +26,7 @@ export default defineConfig({
         "@nolebase/ui",
         "@nolebase/vitepress-plugin-highlight-targeted-heading",
         "@nolebase/vitepress-plugin-inline-link-preview",
+        "@nolebase/vitepress-plugin-thumbnail-hash",
       ],
     },
   },
@@ -115,6 +123,11 @@ export default defineConfig({
   markdown: {
     config(md) {
       // 其他 markdown-it 配置...
+
+      md.use(UnlazyImages(), {
+        imgElementTag: "NolebaseUnlazyImg",
+      });
+
       md.use(InlineLinkPreviewElementTransform);
     },
     image: {
