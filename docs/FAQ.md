@@ -12,13 +12,13 @@
 
 > ### 「次元币」是什么？有什么作用？
 
-「次元币」是 CrashVibe 团队下的通用货币，可以在多个项目中使用，如果需要更详细的使用手册，请[加入我们的 QQ 群咨询](/about/contact)
+「次元币」是 CrashVibe 团队下的通用货币，可以在多个项目中使用，如果需要更详细的使用手册，请[加入我们的 QQ 群咨询](about/contact)
 
 ---
 
 > ### 使用姚奕时遇到 BUG 怎么办？
 
-您可以通过 [Github issues](https://github.com/wling-art/U1Bot/issues) 或 [官方 QQ 群](/about/contact) 反馈问题；在 Issues 或 QQ 群 中，请 **详细地** 描述您遇到的问题，并尽可能描述如何复现该问题，以便我们更好地对问题进行定位和修复
+您可以通过 [Github issues](https://github.com/wling-art/U1Bot/issues) 或 [官方 QQ 群](about/contact) 反馈问题；在 Issues 或 QQ 群 中，请 **详细地** 描述您遇到的问题，并尽可能描述如何复现该问题，以便我们更好地对问题进行定位和修复
 
 ::: warning 请注意！
 Github 在部分地区可能无法正常访问，请根据自身情况合理选择反馈途径

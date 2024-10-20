@@ -36,7 +36,7 @@ const coreMembers = [
   </VPTeamPageTitle>
   <VPTeamPageSection>
     <template #title>管理团队</template>
-    <template #lead>这是目前是U1的管理团队, 感谢他们让U1更美好!</template>
+    <template #lead>这是目前是 U1 的管理团队，感谢他们让 U1 更美好！</template>
     <template #members>
       <VPTeamMembers size="medium" :members="coreMembers" />
     </template>
