@@ -41,7 +41,7 @@ export default defineConfig({
     ["script", { async: "true", src: "/cursor.js" }],
   ],
   sitemap: {
-    hostname: "https://u1.tblstudio.cn",
+    hostname: "https://u1.whiteleaf.cn",
   },
   themeConfig: {
     search: {
@@ -50,7 +50,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: "/logo.svg", width: 28, height: 28 },
     editLink: {
-      pattern: "https://github.com/wling-art/U1_wiki/edit/main/docs/:path",
+      pattern: "https://github.com/whiTeLeaf-TL/U1_wiki/edit/main/docs/:path",
     },
     nav: [
       { text: "主界面   ", link: "/" },
@@ -89,10 +89,12 @@ export default defineConfig({
               { text: "网抑云", link: "/yaoyi-func/网抑云" },
               { text: "网易云点歌", link: "/yaoyi-func/网易云点歌" },
               { text: "伪造信息", link: "/yaoyi-func/伪造信息" },
-              { text: "字符画", link: "/yaoyi-func/字符画" },
               { text: "表情包制作", link: "/yaoyi-func/表情包制作" },
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
-              { text: "状态信息", link: "/yaoyi-func/状态信息" },
+              { text: "B站视频分析", link: "/yaoyi-func/B站视频分析" },
+              { text: "塔罗牌", link: "/yaoyi-func/塔罗牌" },
+              { text: "水群记录", link: "/yaoyi-func/水群记录" },
+              { text: "运行状态", link: "/yaoyi-func/运行状态" },
             ],
           },
           {
@@ -103,7 +105,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: "github", link: "https://github.com/wling-art/U1_wiki" },
+      { icon: "github", link: "https://github.com/whiTeLeaf-TL/U1_wiki" },
     ],
     footer: {
       message: `基于 GPL-3.0 license 许可发布 | 文档版本 ${pkg.version}`,
