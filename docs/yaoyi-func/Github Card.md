@@ -15,5 +15,4 @@
 ## 效果展示
 
 `https://github.com/wling-art/U1_wiki`
-
-![返回信息](./pic/github_card.png)
+![](assets/github_card.png)

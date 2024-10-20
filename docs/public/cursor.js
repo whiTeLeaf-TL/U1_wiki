@@ -45,7 +45,9 @@ class Cursor {
 
         var el = document.getElementsByTagName("*");
         for (let i = 0; i < el.length; i++) {
-            if (getStyle(el[i], "cursor") == "pointer") this.pt.push(el[i].outerHTML);
+            if (getStyle(el[i], "cursor") == "pointer") {
+              this.pt.push(el[i].outerHTML);
+            }
         }
 
         // Create style element only once
@@ -120,8 +122,7 @@ class Cursor {
 function checkDesktop() {
     const isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
     const isTablet = /iPad/i.test(navigator.userAgent)
-    const isDesktop = !isMobile && !isTablet;
-    return isDesktop;
+    return !isMobile && !isTablet;
 }
 
 let isDesktop = checkDesktop()

@@ -18,11 +18,11 @@
 
 - **微信支付**：扫码捐赠
 
-![微信支付二维码](./pic/wechatpay.jpg)
+![](assets/wechatpay.jpg)
 
 - **支付宝**：扫码捐赠
 
-![支付宝二维码](./pic/airpay.jpg)
+![](assets/airpay.jpg)
 
 ### 其他支持方式
 
