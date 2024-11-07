@@ -73,7 +73,6 @@ export default defineConfig({
               { text: "伪造信息", link: "/yaoyi-func/伪造信息" },
               { text: "表情包制作", link: "/yaoyi-func/表情包制作" },
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
-              { text: "B站视频分析", link: "/yaoyi-func/B站视频分析" },
               { text: "塔罗牌", link: "/yaoyi-func/塔罗牌" },
               { text: "水群记录", link: "/yaoyi-func/水群记录" },
               { text: "运行状态", link: "/yaoyi-func/运行状态" },
