@@ -70,7 +70,6 @@ export default defineConfig({
               { text: "天气", link: "/yaoyi-func/天气" },
               { text: "网抑云", link: "/yaoyi-func/网抑云" },
               { text: "网易云点歌", link: "/yaoyi-func/网易云点歌" },
-              { text: "伪造信息", link: "/yaoyi-func/伪造信息" },
               { text: "表情包制作", link: "/yaoyi-func/表情包制作" },
               { text: "Github Card", link: "/yaoyi-func/Github Card" },
               { text: "塔罗牌", link: "/yaoyi-func/塔罗牌" },
