@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 赞助列表
 ---
 
@@ -106,6 +105,11 @@ const sponsors = [
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2015283665&spec=100',
     name: '希儿希儿希',
     title: '捐赠 1 次，共 5 元'
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2165324581&spec=100',
+    name: '双笙蝶舞',
+    title: '捐赠 1 次，共 30 元'
   }
 ]
 </script>
