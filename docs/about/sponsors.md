@@ -110,6 +110,11 @@ const sponsors = [
     avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=2165324581&spec=100',
     name: '双笙蝶舞',
     title: '捐赠 1 次，共 30 元'
+  },
+  {
+    avatar: 'https://q.qlogo.cn/headimg_dl?dst_uin=3170455924&spec=100',
+    name: '。。。。。。',
+    title: '捐赠 1 次，共 10 元'
   }
 ]
 </script>
