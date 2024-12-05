@@ -32,7 +32,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: "/logo.svg", width: 28, height: 28 },
     editLink: {
-      pattern: "https://github.com/whiTeLeaf-TL/U1_wiki/edit/main/docs/:path",
+      pattern: "https://github.com/CrashVibe/U1_wiki/edit/main/docs/:path",
     },
     nav: [
       { text: "主界面   ", link: "/" },
@@ -85,7 +85,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: "github", link: "https://github.com/whiTeLeaf-TL/U1_wiki" },
+      { icon: "github", link: "https://github.com/CrashVibe/U1_wiki" },
     ],
     footer: {
       message: `基于 GPL-3.0 license 许可发布 | 文档版本 ${pkg.version}`,
